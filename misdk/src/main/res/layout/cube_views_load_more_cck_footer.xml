@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/cube_views_load_more_cck_footer_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    tool:text="XXXXXX" />

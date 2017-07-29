@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fifty"
+    android:background="@color/titleColor">
+
+    <FrameLayout
+        android:id="@+id/titleBack"
+        android:layout_width="@dimen/fifty"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding_lsmall_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/back" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big_18"
+        tools:text="@string/work" />
+
+    <FrameLayout
+        android:layout_width="@dimen/fifty"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/padding_lsmall_10"
+        android:paddingRight="@dimen/padding_small_15"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/item_cz" />
+    </FrameLayout>
+
+</RelativeLayout>

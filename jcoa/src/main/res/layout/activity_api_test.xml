@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vitek.jcoa.ui.view.ReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.vitek.jcoa.ui.activity.ApiTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTestBackData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="10dp"
+            android:padding="15dp"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14" />
+    </LinearLayout>
+</com.vitek.jcoa.ui.view.ReboundScrollView>

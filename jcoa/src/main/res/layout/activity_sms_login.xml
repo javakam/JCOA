@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.activity.SmsLoginActivity">
+
+    <include layout="@layout/com_title_view_little" />
+
+    <com.vitek.jcoa.ui.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearYanZheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/thirtyFive"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_llsmall_5">
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/phone_gray" />
+
+                <View
+                    android:layout_width="@dimen/divider_line_05"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_lsmall_10"
+                    android:background="@color/list_line"
+                    android:paddingBottom="@dimen/padding_llsmall_5"
+                    android:paddingTop="@dimen/padding_llsmall_5" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入注册时留下的手机号"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_half"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="@dimen/text_size_normal_16" />
+
+                <ImageView
+                    android:id="@+id/imgPhoneCha"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cha"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/margin_small_15"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/padding_llsmall_5">
+
+                <!--                android:digits="0123456789abcdefghigklmnopqrstuvwxyz"-->
+                <EditText
+                    android:id="@+id/edtYzm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_half"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="@dimen/text_size_normal_16" />
+
+                <Button
+                    android:id="@+id/btSendYZM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_lllsmall_3"
+                    android:layout_marginRight="@dimen/margin_lsmall_10"
+                    android:layout_marginTop="@dimen/margin_lllsmall_3"
+                    android:background="@drawable/selector_send_yzm"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_llsmall_5"
+                    android:text="发送验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal_16" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_hhhhbig_70"
+                android:background="@drawable/selector_bt_login"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big_18" />
+        </LinearLayout>
+    </com.vitek.jcoa.ui.view.ReboundScrollView>
+
+</LinearLayout>

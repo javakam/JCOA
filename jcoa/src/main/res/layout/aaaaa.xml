@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="摘自谷歌官摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。摘自谷歌官方的纸墨设计文档: FAB 用于主要的功能按钮。FAB 是一个漂浮在 UI 之上的圆形图标，并且当点击该按钮的时候，通常具有 变形、位移 等动画效果。 如何添加？ I. 在 build.gradle 中添加最新的 appcompat 和design 库。"
+        android:inputType="textMultiLine" />
+</LinearLayout>

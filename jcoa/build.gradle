@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    aaptOptions.setProperty("cruncherEnabled", false)
+
+    defaultConfig {
+        applicationId "com.vitek.jcoa"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库
+            abiFilters 'armeabi', 'arm64-v8a', 'armeabi-v7a', 'x86'
+            //还可以添加
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//Android lint 自动检测并删除无用资源          http://blog.csdn.net/imesong/article/details/49187695
+    lintOptions {
+        //build release 版本 时 开启lint 检测
+        checkReleaseBuilds true
+        //lint 遇到 error 时继续构建
+        abortOnError false
+
+//        disable 'InvalidPackage'
+        //只要添加下面这一句就可以了
+        disable 'MissingTranslation'
+    }
+
+    //在安卓视图下显示jniLibs文件夹
+//    sourceSets{
+//            main{
+//
+//                jniLibs.srcDirs=['libs']
+//            }
+//
+//    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':misdk')
+    //  LeakCanary     A memory leak detection library for Android and Java.
+    compile files('libs/VoiceRecognition-2.2.1027.jar')
+    compile project(':gallerypick')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.github.bumptech.glide:volley-integration:1.5.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.jaredrummler:material-spinner:1.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">misdk</string>
+
+
+    <!--EditText输入内容校验-->
+    <string name="text_input_empty">您还没输入内容哦</string>
+    <string name="text_input_phone_validate">请输入11位有效手机号</string>
+    <string name="text_input_password_can_not_be_chinese">密码暂不支持中文输入</string>
+    <string name="text_input_password_length_invalidate">密码长度为6-16位</string>
+
+    <!--LoadMore   全部数据加载完毕-->
+    <string name="cube_mints_exit_tip">再按一次，退出程序</string>
+    <string name="cube_views_load_more_loading">加载中...</string>
+    <string name="cube_views_load_more_click_to_load_more">点击加载更多</string>
+    <string name="cube_views_load_more_loaded_no_more">-- end --</string>
+    <string name="cube_views_load_more_loaded_empty">数据为空</string>
+    <string name="cube_views_load_more_error">加载失败,点击重试</string>
+
+    <!--zhy   flowlayout-->
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+</resources>

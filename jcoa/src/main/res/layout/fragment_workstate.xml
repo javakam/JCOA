@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.fragment.WorkStateFragment">
+
+    <include layout="@layout/com_title_view" />
+
+    <include layout="@layout/com_rbgroup_v" />
+
+    <LinearLayout
+        android:id="@+id/linearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_one_1"
+        android:layout_marginTop="@dimen/margin_llsmall_5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerWorkState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerDWBG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerJob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/com_inner" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/one">
+
+        <include layout="@layout/com_ultral_listivew" />
+    </FrameLayout>
+
+</LinearLayout>

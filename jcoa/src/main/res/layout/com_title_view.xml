@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@mipmap/banner"
+    android:padding="@dimen/padding_normal_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_com_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/titleColor">
+
+            <FrameLayout
+                android:id="@+id/titleBack"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_lsmall_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/back" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big_18"
+                tools:text="@string/work" />
+
+            <FrameLayout
+                android:id="@+id/titleRight"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_title_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@mipmap/print" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitleNowday"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_big_18"
+            tools:text="@string/todayDate" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

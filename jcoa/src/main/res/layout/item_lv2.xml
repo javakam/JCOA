@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_llsmall_5">
+
+
+    <TextView
+        android:id="@+id/tvShortContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/padding_llsmall_5"
+        android:paddingLeft="@dimen/padding_lsmall_10"
+        android:paddingRight="@dimen/padding_lsmall_10"
+        android:paddingTop="@dimen/padding_llsmall_5"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/text_size_small_14"
+        tools:text="@string/text_long2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_lsmall_10"
+            android:paddingRight="@dimen/padding_llsmall_5"
+            android:paddingTop="@dimen/padding_llsmall_5"
+            android:textColor="@color/textColorGray"
+            android:textSize="@dimen/text_size_small_14"
+            tools:text="@string/datetest_" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvDate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_llsmall_5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btEdit"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_edit_click"
+                android:padding="@dimen/padding_lllsmall_3"
+                android:text="编辑"
+                android:textColor="@color/color_edit_text"
+                android:textSize="@dimen/text_size_small_14" />
+
+            <Button
+                android:id="@+id/btDelete"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/margin_small_15"
+                android:layout_weight="1"
+                android:background="@drawable/sel_edit_click_n"
+                android:padding="@dimen/padding_lllsmall_3"
+                android:text="删除"
+                android:textColor="@color/color_edit_text_n"
+                android:textSize="@dimen/text_size_small_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

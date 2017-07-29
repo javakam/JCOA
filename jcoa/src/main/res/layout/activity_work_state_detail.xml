@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.activity.WorkStateDetailActivity">
+
+    <include layout="@layout/com_title_view_little" />
+
+    <TextView
+        android:id="@+id/tvWorkStateDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_lsmall_10"
+        android:lineSpacingExtra="@dimen/padding_llsmall_5"
+        android:padding="@dimen/padding_lsmall_10"
+        android:text="@string/text_long"
+        android:textColor="@color/black_half"
+        android:textSize="@dimen/text_size_normal_16" />
+</LinearLayout>

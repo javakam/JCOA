@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.activity.ChangePwdActivity">
+
+    <include layout="@layout/com_title_view" />
+
+    <com.vitek.jcoa.ui.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_small_15"
+                    android:text="新密码"
+                    android:textColor="@color/black_half"
+                    android:textSize="@dimen/text_size_normal_16" />
+
+                <View
+                    android:layout_width="@dimen/one"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_lsmall_10"
+                    android:background="@color/bgColor" />
+
+                <EditText
+                    android:id="@+id/edtOriginalPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_llsmall_5"
+                    android:background="@null"
+                    android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="left|center_vertical"
+                    android:hint="新密码"
+                    android:textColor="@color/black_half"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="@dimen/text_size_normal_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_small_15"
+                    android:text="重复新密码"
+                    android:textColor="@color/black_half"
+                    android:textSize="@dimen/text_size_normal_16" />
+
+                <View
+                    android:layout_width="@dimen/one"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_lsmall_10"
+                    android:background="@color/bgColor" />
+
+                <EditText
+                    android:id="@+id/edtNewPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_llsmall_5"
+                    android:background="@null"
+                    android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="left|center_vertical"
+                    android:hint="重复新密码"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black_half"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="@dimen/text_size_normal_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingTop="@dimen/padding_llsmall_5"
+                android:text="密码由6~20位英文字母、数字或符号组成"
+                android:textColor="@color/textColorGray"
+                android:textSize="@dimen/text_size_small_14" />
+
+
+            <Button
+                android:id="@+id/btConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_lbig_25"
+                android:layout_marginRight="@dimen/margin_lbig_25"
+                android:layout_marginTop="@dimen/onehundredandtwenty"
+                android:background="@drawable/selector_bt_login"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big_18" />
+        </LinearLayout>
+    </com.vitek.jcoa.ui.view.ReboundScrollView>
+</LinearLayout>

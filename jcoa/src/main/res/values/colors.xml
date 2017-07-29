@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="bgColor">#EBEBEB</color>
+    <color name="textColor">#858585</color>
+    <color name="textColorGray">#999999</color>
+    <color name="dateColor">#48A3F3</color>
+    <color name="redColor">#EC491E</color>
+
+    <color name="titleColor">#2091F1</color>
+    <color name="titleColorInner">#77B8EE</color>
+
+    <!--<drawable name= "grean">#C0FF3E</drawable>-->
+    <!--<drawable name= "huise">#B7B7B7</drawable>-->
+
+</resources>

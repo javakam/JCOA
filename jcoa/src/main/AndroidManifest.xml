@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vitek.jcoa">
+
+    <!-- 讯飞语音权限 -->
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- end -->
+
+
+    <!-- SD卡的写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 文件读写操作（含sdcard读写操作） 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 读取数据库所需权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 百度语音 -->
+    <!--
+    如果不加上的话 BUG : com.baidu.speech.core.BDSSDKLoader.SetLogLevel(int)
+    (tried Java_com_baidu_speech_core_BDSSDKLoader_S
+    -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for com.baidu.speech.recognizerdemo"
+        android:targetPackage="com.baidu.speech.recognizerdemo" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".JCOAApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- java.lang.SecurityException: Uid 10158 does not have permission to uri content://com.yancy.gallerypickdemo.fileprovider/external/storage/sdcard0/Vitek/jcoa/pics/20170529153141.jpg -->
+        <!-- Same as Gallery Config -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.vitek.jcoa.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.vitek.jcoa.net.glide.GlideConfiguration"
+            android:value="" />
+
+        <activity android:name=".ui.activity.WorkRecordActivity" />
+        <activity android:name=".ui.activity.MyDairyActivity" />
+        <activity android:name=".ui.activity.DraftActivity" />
+        <activity android:name=".ui.activity.ApiTestActivity" />
+
+        <!-- begin: baidu speech sdk -->
+        <!-- 请填写真实的APP_ID API_KEY SECRET_KEY -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="9675517" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="iHt5HlpDgCFVvqm72jmcgOG3" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="03439181e7a30919f5d7579400a44d50" />
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- end : baidu speech sdk -->
+        <activity android:name=".ui.activity.SmsLoginActivity" />
+        <activity android:name=".ui.activity.ForgetPwdActivity" />
+        <activity android:name=".ui.activity.JobSummaryActivity" />
+        <activity android:name=".ui.activity.DairyDetailActivity" />
+        <activity android:name=".ui.activity.WorkStateDetailActivity" />
+        <activity android:name=".ui.activity.gw.GStartFlowActivity" />
+        <activity android:name=".ui.activity.gw.GApiTestActivity" />
+        <activity android:name=".ui.activity.gw.GShowTaskActivity" />
+        <activity android:name=".ui.activity.gw.GApprovalStatusActivity" />
+        <activity android:name=".ui.activity.gw.GOfficeFilingActivity" />
+        <activity android:name=".ui.activity.ReturnBoxActivity" />
+        <activity android:name=".ui.activity.ChangePwdActivity" />
+        <activity android:name=".ui.activity.ChangePhoneNum" />
+        <activity android:name=".ui.activity.ChangeTrueNameActivity" />
+        <activity android:name=".ui.activity.gw.GDocumentApprovalActivity" />
+        <activity android:name=".ui.activity.gw.GCommitTaskActivity" />
+        <activity android:name=".ui.activity.gw.GShowOfficeFilingActivity"></activity>
+    </application>
+
+</manifest>

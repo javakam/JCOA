@@ -1,0 +1,127 @@
+<in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_ptr_frame_com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cube_ptr:ptr_duration_to_close="200"
+    cube_ptr:ptr_duration_to_close_header="1000"
+    cube_ptr:ptr_keep_header_when_refresh="true"
+    cube_ptr:ptr_pull_to_fresh="false"
+    cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+    cube_ptr:ptr_resistance="1.7"
+    tools:context="com.vitek.jcoa.ui.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/banner" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lsmall_10"
+            android:layout_marginTop="@dimen/margin_lsmall_10"
+            android:background="@color/white"
+            android:padding="@dimen/margin_lsmall_10">
+
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="@dimen/forty"
+                android:layout_height="@dimen/forty"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/header_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_lsmall_10"
+                android:layout_toRightOf="@id/imgHeader"
+                android:orientation="vertical"
+
+                android:padding="@dimen/margin_llsmall_5">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_half"
+                    tools:text="@string/zhangnan" />
+
+                <TextView
+                    android:id="@+id/tvDuty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_llsmall_5"
+                    android:textColor="@color/textColor"
+                    tools:text="@string/shichangdiaochayuan" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/dateColor"
+                tools:text="@string/datetest2" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/padding_lsmall_10"
+            android:paddingLeft="@dimen/padding_small_15"
+            android:paddingTop="@dimen/margin_lsmall_10"
+            android:text="@string/transactionRemind"
+            android:textColor="@color/black_half" />
+
+        <!--<include layout="@layout/com_ultral_listivew" />-->
+
+        <TextView
+            android:id="@+id/tvRemind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_lsmall_10"
+            android:paddingLeft="@dimen/padding_small_15"
+            android:paddingTop="@dimen/margin_llsmall_5"
+            android:text="@string/notAvailable"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_lsmall_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_05"
+            android:background="@color/list_line"
+            android:paddingLeft="@dimen/padding_small_15"
+            android:paddingRight="@dimen/padding_small_15" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lsmall_10"
+            android:layout_marginTop="@dimen/margin_lsmall_10"
+            android:background="@android:color/white"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/padding_small_15"
+            android:paddingTop="@dimen/padding_llsmall_5"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

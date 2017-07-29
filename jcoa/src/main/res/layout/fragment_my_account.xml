@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.fragment.MyAccountFragment">
+
+    <include layout="@layout/com_title_view" />
+
+    <com.vitek.jcoa.ui.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_lsmall_10"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@color/white"
+                android:padding="@dimen/margin_lsmall_10">
+
+                <ImageView
+                    android:id="@+id/imgHeader"
+                    android:layout_width="@dimen/forty"
+                    android:layout_height="@dimen/forty"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/header_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_lsmall_10"
+                    android:layout_toRightOf="@id/imgHeader"
+                    android:orientation="vertical"
+
+                    android:padding="@dimen/margin_llsmall_5">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_half"
+                        tools:text="@string/zhangnan" />
+
+                    <TextView
+                        android:id="@+id/tvDuty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_llsmall_5"
+                        android:textColor="@color/textColor"
+                        tools:text="@string/shichangdiaochayuan" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relaChangePwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small_15"
+                    android:text="@string/change_pwd" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_normal_20"
+                    android:paddingRight="@dimen/padding_small_15">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/arrow_right_gray" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relaChangePhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/margin_one_1"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small_15"
+                    android:text="@string/change_phonenum" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_normal_20"
+                    android:paddingRight="@dimen/padding_small_15">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/arrow_right_gray" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relaChangeTrueName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small_15"
+                    android:text="@string/change_truename" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_normal_20"
+                    android:paddingRight="@dimen/padding_small_15">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/arrow_right_gray" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:id="@+id/relaChangeKefuNum"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small_15"
+                    android:text="@string/kefu_num" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/padding_normal_20"
+                        android:paddingRight="@dimen/padding_small_15"
+                        android:text="400-666-888"
+                        android:textColor="@color/redColor" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relaUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/margin_one_1"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small_15"
+                    android:text="@string/version_update" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_normal_20"
+                    android:paddingRight="@dimen/padding_small_15">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/arrow_right_gray" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btExitLogin"
+                style="@style/GWTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyFive"
+                android:layout_marginBottom="@dimen/margin_lsmall_10"
+                android:layout_marginTop="@dimen/margin_lsmall_10"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/exitlogin" />
+
+        </LinearLayout>
+    </com.vitek.jcoa.ui.view.ReboundScrollView>
+</LinearLayout>

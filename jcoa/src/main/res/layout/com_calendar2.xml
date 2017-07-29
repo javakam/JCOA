@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small_15">
+<!--app:mcv_allowClickDaysOutsideCurrentMonth=”true”允许按当前月份的天数
+app:mcv_showOtherDates=”all” 本月外其它的日期可以被选中
+app:mcv_arrowColor=”” 箭头颜色
+app:mcv_calendarMode=”” 日历模式
+app:mcv_dateTextAppearance=”” 日期文本外观
+app:mcv_firstDayOfWeek=”” 星期一
+app:mcv_headerTextAppearance=”” 标题文本外观
+app:mcv_leftArrowMask=”” 左箭头面具
+app:mcv_monthLabels=”” 月标签
+app:mcv_rightArrowMask=”” 右箭头面具
+app:mcv_selectionColor=”” 选择颜色
+app:mcv_weekDayLabels=”” 周标签
+app:mcv_weekDayTextAppearance=”” 周日期的文本外观 -->
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/materialCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#00F"
+        app:mcv_showOtherDates="all" />
+</FrameLayout>

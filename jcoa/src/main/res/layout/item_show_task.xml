@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearGw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_llsmall_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_lsmall_10"
+            android:text="@string/gw_title"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14" />
+
+        <TextView
+            android:id="@+id/tvGwTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingRight="@dimen/padding_llsmall_5"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14"
+            tools:text="abcdefghijklmn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_llsmall_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_lsmall_10"
+            android:text="@string/gw_bianhao"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14" />
+
+        <TextView
+            android:id="@+id/tvGwNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingRight="@dimen/padding_llsmall_5"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14"
+            tools:text="0001" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_llsmall_5">
+
+        <TextView
+            android:id="@+id/tvGwInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_lsmall_10"
+            android:text="@string/creator"
+            android:textColor="@color/textColorGray"
+            android:textSize="@dimen/text_size_small_14" />
+
+        <TextView
+            android:id="@+id/tvGwCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:layout_toLeftOf="@+id/tvGwDate"
+            android:layout_toRightOf="@id/tvGwInner"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/text_size_small_14"
+            tools:text="wireshark" />
+
+        <TextView
+            android:id="@id/tvGwDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_llsmall_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/textColorGray"
+            android:textSize="@dimen/text_size_small_14"
+            tools:text="2015-5-22" />
+
+    </RelativeLayout>
+</LinearLayout>

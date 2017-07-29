@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relaPublish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vitek.jcoa.ui.fragment.PublishFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/com_title_view" />
+
+        <include layout="@layout/com_rbgroup_v" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_lsmall_10"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerWorkState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="工作状态"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="200dp" />
+
+            <!--<View-->
+            <!--android:layout_width="@dimen/one"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/bgColor" />-->
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerDWBG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="200dp" />
+        </LinearLayout>
+
+        <com.vitek.jcoa.ui.view.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_lsmall_10"
+                android:layout_marginRight="@dimen/margin_lsmall_10"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_lsmall_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_llsmall_5"
+                    android:background="@drawable/shape_inner"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_lsmall_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="工作日志"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal_16"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@drawable/shape_dairy">
+
+                    <TextView
+                        android:id="@+id/tvLog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/list_bg"
+                        android:lineSpacingExtra="@dimen/divider_line_03"
+                        android:padding="@dimen/padding_lsmall_10"
+
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_small_14"
+                        android:visibility="gone"
+                        tools:text="@string/text_long" />
+
+                    <!--<View-->
+                    <!--android:id="@+id/lineView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/divider_line_05"-->
+                    <!--android:layout_below="@id/tvLog"-->
+                    <!--android:background="@color/gray" />-->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tvLog"
+                        android:layout_marginBottom="@dimen/margin_lllsmall_3"
+                        android:layout_marginLeft="@dimen/margin_lsmall_10"
+
+                        android:layout_marginRight="@dimen/margin_lsmall_10">
+
+                        <EditText
+                            android:id="@+id/edtContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/bottom_line_edt"
+                            android:gravity="left|top"
+                            android:inputType="textMultiLine"
+                            android:lineSpacingExtra="@dimen/padding_lsmall_10"
+                            android:padding="@dimen/padding_lsmall_10"
+                            android:textColor="@color/black_half"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:textSize="@dimen/text_size_normal_16"
+                            tools:text="@string/text_long" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <!--OLD-->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_small_15"
+                    android:layout_marginTop="@dimen/margin_small_15"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btSaveLog"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bt"
+                        android:gravity="center"
+                        android:text="@string/saveLog"
+                        android:textColor="@color/color_bt_text"
+                        android:textSize="@dimen/text_size_small_14" />
+
+
+                    <Button
+                        android:id="@+id/btCommitLog"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_marginLeft="@dimen/margin_big_30"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bt"
+                        android:gravity="center"
+                        android:text="@string/commitLog"
+                        android:textColor="@color/color_bt_text"
+                        android:textSize="@dimen/text_size_small_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.vitek.jcoa.ui.view.ReboundScrollView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgVoice"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_small_15"
+        android:layout_marginRight="@dimen/margin_small_15"
+        android:src="@mipmap/voice" />
+</RelativeLayout>

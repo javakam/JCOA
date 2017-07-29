@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.activity.WorkRecordActivity">
+
+    <include layout="@layout/com_title_view" />
+
+    <include layout="@layout/com_rbgroup_v" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_lsmall_10"-->
+    <!--android:layout_marginRight="@dimen/margin_lsmall_10"-->
+    <!--android:layout_marginTop="@dimen/margin_lsmall_10"-->
+    <!--android:background="@drawable/shape_inner"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/margin_lsmall_10">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="日期"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_size_normal_16" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="工作状态"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_size_normal_16" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvInnerBlue3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="人员"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_size_normal_16" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="操作"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_size_normal_16" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_one_1">
+
+        <include layout="@layout/com_ultral_listivew" />
+
+    </FrameLayout>
+
+</LinearLayout>

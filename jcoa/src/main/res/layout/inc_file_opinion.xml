@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_llsmall_5"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+    <TextView
+        style="@style/GWTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_llsmall_5"
+        android:padding="@dimen/padding_lsmall_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_llsmall_5"
+        android:orientation="vertical"
+        android:text="@string/gwOpin" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_small_15"
+        android:paddingRight="@dimen/padding_small_15">
+
+        <TextView
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opinChuli" />
+
+        <EditText
+            android:id="@+id/edtChuliOpin"
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/padding_llsmall_5"
+            android:textCursorDrawable="@drawable/text_cursor"
+            tools:text="@string/text_long" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_one_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_small_15"
+        android:paddingRight="@dimen/padding_small_15">
+
+        <TextView
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bmfzr" />
+
+        <EditText
+            android:id="@+id/edtDeptOpin"
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/padding_llsmall_5"
+            android:textCursorDrawable="@drawable/text_cursor"
+            tools:text="@string/text_long" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_one_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_small_15"
+        android:paddingRight="@dimen/padding_small_15">
+
+        <TextView
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opinLeader" />
+
+        <EditText
+            android:id="@+id/edtLeaderOpin"
+            style="@style/GWTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/padding_llsmall_5"
+            android:textCursorDrawable="@drawable/text_cursor"
+            tools:text="@string/text_long" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

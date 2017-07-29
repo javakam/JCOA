@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\fastwork\VITEK\VTProjects\VITEK\lib-ultra-ptr\assets"/><source path="D:\fastwork\VITEK\VTProjects\VITEK\lib-ultra-ptr\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\fastwork\VITEK\VTProjects\VITEK\lib-ultra-ptr\src\debug\assets"/></dataSet></merger>

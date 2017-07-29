@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.vitek.jcoa.ui.activity.gw.GCommitTaskActivity">
+
+    <include layout="@layout/com_title_view" />
+
+    <LinearLayout
+        android:id="@+id/linearSP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerGwDeparment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="部门"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+
+        <!--<View-->
+        <!--android:layout_width="@dimen/one"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/bgColor" />-->
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerGwUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="200dp" />
+    </LinearLayout>
+
+    <com.vitek.jcoa.ui.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gw_item_height_50"
+                android:layout_marginTop="@dimen/margin_llsmall_5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingRight="@dimen/padding_small_15">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="公文编号" />
+
+                <TextView
+                    android:id="@+id/gwTvNumber"
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="BDJSJC-JL-A-5" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gw_item_height_50"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingRight="@dimen/padding_small_15">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公文主题" />
+
+                <TextView
+                    android:id="@+id/tvGwTitle"
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_lsmall_10"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_llsmall_5"
+                    android:textSize="@dimen/text_size_small_14"
+                    tools:text="abcdefg" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gw_item_height_50"
+                android:layout_marginTop="@dimen/margin_one_1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingRight="@dimen/padding_small_15">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="创建者" />
+
+                <TextView
+                    android:id="@+id/gwTvCreater"
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="abcdefg" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gw_item_height_50"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingRight="@dimen/padding_small_15">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来文机关" />
+
+                <TextView
+                    android:id="@+id/tvGwLaiwen"
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_lsmall_10"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_llsmall_5"
+                    android:textSize="@dimen/text_size_small_14"
+                    tools:text="abcdefg" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gw_item_height_50"
+                android:layout_marginTop="@dimen/margin_one_1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small_15"
+                android:paddingRight="@dimen/padding_small_15">
+
+                <TextView
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="现审批部门" />
+
+                <TextView
+                    android:id="@+id/gwTvShenpi"
+                    style="@style/GWTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    tools:text="上级交办" />
+            </RelativeLayout>
+
+            <include layout="@layout/inc_filenum" />
+
+            <!--<include layout="@layout/inc_file_opinion" />-->
+
+            <TextView
+                style="@style/GWTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_llsmall_5"
+                android:layout_marginTop="@dimen/margin_llsmall_5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_lsmall_10"
+                android:text="公文拍照上传" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_lsmall_10"
+                android:paddingRight="@dimen/padding_lsmall_10"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btGwCommit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_normal_20"
+                android:layout_marginTop="@dimen/margin_small_15"
+                android:background="@mipmap/gw_commit"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal_16" />
+
+        </LinearLayout>
+    </com.vitek.jcoa.ui.view.ReboundScrollView>
+</LinearLayout>

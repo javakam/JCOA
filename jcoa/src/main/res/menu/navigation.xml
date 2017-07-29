@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/selector_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_publish"
+        android:icon="@drawable/selector_publish"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_wkstate"
+        android:icon="@drawable/selector_wkstate"
+        android:title="@string/title_notifications" />
+    <item
+        android:id="@+id/navigation_myaccount"
+        android:icon="@drawable/selector_my"
+        android:title="@string/title_myaccount" />
+
+</menu>

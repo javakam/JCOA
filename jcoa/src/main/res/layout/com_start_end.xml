@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_lsmall_10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_llsmall_5"
+        android:gravity="center"
+        android:text="选择起止时间"
+        android:textColor="@color/black_half"
+        android:textSize="@dimen/text_size_small_14" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_wkstate_press"
+            android:button="@null"
+            android:gravity="center"
+            android:hint="开始时间"
+            android:maxLines="1"
+            android:padding="@dimen/padding_llsmall_5"
+            android:textColor="@color/color_rb_date"
+            android:textSize="@dimen/text_size_small_14" />
+
+        <RadioButton
+            android:id="@+id/rbEndTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lsmall_10"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_wkstate_press"
+            android:button="@null"
+            android:gravity="center"
+            android:hint="结束时间"
+            android:maxLines="1"
+            android:padding="@dimen/padding_llsmall_5"
+            android:textColor="@color/color_rb_date"
+            android:textSize="@dimen/text_size_small_14" />
+
+    </RadioGroup>
+</LinearLayout>
